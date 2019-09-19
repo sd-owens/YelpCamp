@@ -17,7 +17,7 @@ const commentRoutes = require("./routes/comments"),
 	indexRoutes = require("./routes/index");
 
 mongoose.connect(
-	"mongodb+srv://admin:<password>@cluster0-ssxqb.mongodb.net/yelp_camp?retryWrites=true&w=majority"
+	"mongodb+srv://admin:password@cluster0-ssxqb.mongodb.net/yelp_camp?retryWrites=true&w=majority"
 );
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
